@@ -1,4 +1,4 @@
-# LoginHomeMyapp
+# Login angular app
 
 This project was generated with angular CLI and it has ReactiveFormsModule for validation the login page and google font for nice text style.
 This project has basically three page Login,Error and Home page.
