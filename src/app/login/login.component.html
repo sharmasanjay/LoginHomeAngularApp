@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="jumbotron">
+          <h2 style="text-align: center ">Login Page</h2>
+          <form name="form" [formGroup]="form" (ngSubmit)="form.valid && onSubmit()">
+            <div class="form-group">
+              <label for="email"><b>Email</b></label>
+              <input type="text" class="form-control" formControlName="email" [ngClass]="{'is-invalid':form.get('email').touched && form.get('email').invalid}"   />
+              <div *ngIf="form.get('email').touched && form.get('email').invalid"  class="invalid-feedback">
+                <div *ngIf="form.get('email').errors.required">Email Name is required</div>
+                <div *ngIf="form.get('email').errors.email">Email must be a valid email Address</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password"><b>Password</b></label>
+              <input type="password" class="form-control"  formControlName="password" [ngClass]="{'is-invalid':form.get('password').touched && form.get('password').invalid}" />
+              <div *ngIf="form.get('password').touched && form.get('password').invalid"  class="invalid-feedback">
+                <div *ngIf="form.get('password').errors.required">Password is required</div>
+                <div *ngIf="form.get('password').errors.minlength">Password  must be a letaset 6 charector</div>
+              </div>
+             
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary"  [disabled]="!form.valid">Login</button>
+            </div>
+          </form>
+          <h4>This page is login where user can login by providing valid email and minimum 6 character of passwort</h4>
+        </div>
+      </div>
+    </div>
+  </div>
