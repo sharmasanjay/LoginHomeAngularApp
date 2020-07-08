@@ -5,7 +5,7 @@ This project has basically three page Login,Error and Home page.
 when the application serve by uing `ng serve` it starts with login page and once we provide valide email mocked in user-mocks.ts file we will be redirect to success HomePage
 else redirect to ErrorPage instructed to use valid email from mocked data.
 
-## Development server
+## Run in local
 
 Run `npm install` then `ng serve` to start the application. Navigate to `http://localhost:4200/` to open the application. The app will automatically reload if you change any of the source files.
 
