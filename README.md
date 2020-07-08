@@ -1,27 +1,16 @@
 # LoginHomeMyapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
+This project was generated with angular CLI and it has ReactiveFormsModule for validation the login page and google font for nice text style.
+This project has basically three page Login,Error and Home page.
+when the application serve by uing `ng serve` it starts with login page and once we provide valide email mocked in user-mocks.ts file we will be redirect to success HomePage
+else redirect to ErrorPage instructed to use valid email from mocked data.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm install` then `ng serve` to start the application. Navigate to `http://localhost:4200/` to open the application. The app will automatically reload if you change any of the source files.
 
 ## Further help
+Below the reference image the application looks like running in locally:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![AngularAppSnapshot](https://user-images.githubusercontent.com/5600689/86920474-7bad1180-c147-11ea-9a67-5ef56fa46a45.PNG)
+
